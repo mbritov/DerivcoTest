@@ -6,8 +6,7 @@ namespace DerivcoTest
     {
         static void Main(string[] args)
         {
-            //string test_string = "This is a test string";
-            string test_string = "$%^&";
+            string test_string = "This is a test string";
 
             if (String.Compare(test_string, Encryptor.Decode(Encryptor.Encode(test_string))) == 0)
             {

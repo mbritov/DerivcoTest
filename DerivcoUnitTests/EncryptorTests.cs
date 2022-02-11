@@ -11,8 +11,6 @@ namespace Question1Tests
         public void ShouldEncodeString()
         {
             //prepare
-            //var input = "1";
-            //var expected = "MQ==";
             var input = "Test string Test string";
             var expected = "VGVzdCBzdHJpbmcgVGVzdCBzdHJpbmc=";
             

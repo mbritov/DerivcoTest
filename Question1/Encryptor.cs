@@ -77,10 +77,6 @@ namespace DerivcoTest
         public static string Decode(string input)
         {
             int length = input.Length;
-            //int cb = (length / 4 + ((Convert.ToBoolean(length % 4)) ? 1 : 0)) * 3 + 1;
-            //char[] output = new char[cb];
-            //int c = 0;
-
             var output = new List<char>();
             int bits = 0;
             int reflex = 0;
@@ -102,16 +98,11 @@ namespace DerivcoTest
                 {
                     int mask = 0x000000ff << (bits % 8);
                     output.Add(Convert.ToChar((reflex & mask) >> (bits % 8)));
-                    //output[c++] = Convert.ToChar((reflex & mask) >> (bits % 8));
                     int invert = ~mask;
                     reflex &= invert;
                     bits -= 8;
                 }
-
-                //if (fTerminate)
-                //  break;
             }
-            //Console.WriteLine("{0} --> {1}", input, new string(output.ToArray()));
 
             return new string(output.ToArray());
         }
