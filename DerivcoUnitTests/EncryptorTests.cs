@@ -2,7 +2,7 @@
 
 using DerivcoTest;
 
-namespace Question1Tests
+namespace UnitTests
 {
     [TestClass]
     public class EncryptorTests
