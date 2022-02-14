@@ -108,9 +108,10 @@ namespace DerivcoQuestion2
 
     public class HighCardGame
     {
+        public Card.CardSuit Trump { get; set; }
+
         private List<Deck> _decks;
         private int _countDeck;
-        private Card.CardSuit _trump;
         private Random _rnd = new Random();
 
         public enum Winner
@@ -131,7 +132,7 @@ namespace DerivcoQuestion2
 
             // pick random suit as a trump
             int j = _rnd.Next(0, 4);
-            _trump = (Card.CardSuit)Enum.GetValues(typeof(Card.CardSuit)).GetValue(j);
+            Trump = (Card.CardSuit)Enum.GetValues(typeof(Card.CardSuit)).GetValue(j);
         }
 
         private Deck GetRandomDeck()
@@ -146,8 +147,8 @@ namespace DerivcoQuestion2
 
             if (card1.Value == card2.Value)
             {
-                if (card1.Suit == _trump && card2.Suit != _trump) return Winner.First;
-                if (card1.Suit != _trump && card2.Suit == _trump) return Winner.Second;
+                if (card1.Suit == Trump && card2.Suit != Trump) return Winner.First;
+                if (card1.Suit != Trump && card2.Suit == Trump) return Winner.Second;
                 return Winner.Draw;
             }
 

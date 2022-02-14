@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question1", "Question1\Ques
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question2", "Question2\Question2.csproj", "{F0B9BB3E-B823-4FEB-A973-55353B2A38E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question1Tests", "DerivcoUnitTests\Question1Tests.csproj", "{B45F7CC3-15C4-430B-BFA2-19E00CD1C7CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DerivcoUnitTests", "DerivcoUnitTests\DerivcoUnitTests.csproj", "{B45F7CC3-15C4-430B-BFA2-19E00CD1C7CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
