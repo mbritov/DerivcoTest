@@ -22,7 +22,7 @@ namespace UnitTests
             HighCardGame highCard = new HighCardGame();
             highCard.Trump = Card.CardSuit.Hearts;
             Card card1 = new Card() { IsWildCard = false, Suit = Card.CardSuit.Hearts, Value = Card.CardValue.Two };
-            Card card2 = new Card() { IsWildCard = false, Suit = Card.CardSuit.Clover, Value = Card.CardValue.Three };
+            Card card2 = new Card() { IsWildCard = false, Suit = Card.CardSuit.Clover, Value = Card.CardValue.Two };
 
             Assert.AreEqual(HighCardGame.Winner.First, highCard.CheckWinner(card1, card2));
         }
